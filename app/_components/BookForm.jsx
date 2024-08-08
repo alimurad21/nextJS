@@ -40,8 +40,8 @@ const BookForm = ({ book, onSubmit, setBook }) => {
       publishedDate: state.publishedDate ? new Date(state.publishedDate).toISOString() : ''
     };
     await onSubmit(bookData); // Pass the bookData object to onSubmit
-    console.log('Form submitted successfully');
-    // router.push('/');
+    // console.log('Form submitted successfully');
+    router.push('/');
   };
 
   return (
